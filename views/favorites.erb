@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="stylesheet" href="styles/app.css">
+  
+  <title>Your Favorite Jokes</title>
+</head>
+<body>
+  <h1>Your Favorite Jokes</h1>
+  <h2>Welcome to you very own Joke Locker!</h2>
+
+  <form action="/favorites" method="post">
+    <label for="joke">Add a new joke:</label>
+    <textarea name="joke" id="joke" rows="4" cols="50"></textarea>
+    <input class="button-55" type="submit" value="Save Joke">
+  </form>
+  <br>
+
+  <% if @jokes.any? %>
+    <ul class="favJokes">
+      <% @jokes.each do |joke| %>
+        <li>
+          <%= joke.content %>
+          <form action="/favorites/<%= joke.id %>" method="post" style="display:inline;">
+            <input type="hidden" name="_method" value="delete">
+            <input class="delete-button" type="submit" value="Delete">
+
+          </form>
+        </li>
+      <% end %>
+    </ul>
+  <% else %>
+    <p>You have no favorite jokes yet.</p>
+  <% end %>
+</body>
+</html>

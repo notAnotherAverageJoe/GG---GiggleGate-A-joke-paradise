@@ -1,0 +1,18 @@
+rackup -- to run server
+
+Testing: Write automated tests for your application using
+ a testing framework like RSpec. This will demonstrate your commitment to writing reliable code.
+
+Deployment: Deploy your application on a platform like
+ Heroku or Render. Being able to show a live demo of your project is very important for a portfolio.
+
+Documentation: Include clear and concise documentation
+ on how to set up, run, and use your application. This is 
+ important for anyone who might want to explore your code.
+
+
+
+
+
+
+

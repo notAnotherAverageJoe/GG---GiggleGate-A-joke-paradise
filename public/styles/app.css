@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #cd7ffa, #56f4cf);
+    
+    
+  }
+
+  h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.2em;
+    color: #3f3d3d;
+  }
+
+  a {
+    text-decoration: none;
+    color: #06bfe0;
+    font-weight: bold;
+    border: 2px solid #7c25c4;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  a:hover {
+    background-color: #03e1cf;
+    color: #fff;
+  }
+
+
+  .container {
+    text-align: center;
+  }
+
+
+  /* Navbar Styles */
+header {
+    background-color: #333;
+    position: fixed; /* Fix the navbar to the top */
+    width: 100%; /* Full width */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    z-index: 1000; /* Ensure it stays above other content */
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 0;
+  }
+  
+  .nav-link {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left:10px;
+    margin-right: 10px;
+    
+  }
+  
+  .nav-link:hover {
+    background-color: #555;
+    color: #fff;
+  }
+  
+  main {
+    padding: 80px 20px; /* Add top padding to avoid content being hidden under the fixed navbar */
+  }
+
+
+
+
+/* CSS */
+.button-55 {
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+}
+
+.button-55:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-55:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+/* Cookie Button Styles */
+#cookie-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Ensures crumbs are positioned relative to this container */
+}
+
+#cookie-button {
+    background-color: #f7e7d4;
+    border: none;
+    color: transparent;
+    padding: 20px;
+    font-size: 3em;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Ensures chocolate chips and crumbs are positioned relative to this button */
+}
+
+
+/* Chocolate Chips */
+.chocolate-chip {
+    position: absolute;
+    background-color: #3e2723; /* Dark brown for chocolate chips */
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Positioning chocolate chips */
+#cookie-button .chip1 { top: 20%; left: 30%; }
+#cookie-button .chip2 { top: 50%; left: 50%; }
+#cookie-button .chip3 { top: 70%; left: 20%; }
+#cookie-button .chip4 { top: 70%; left: 70%; }
+
+
+
+
+#cookie-button:hover {
+    background-color: #e0d0b0;
+}
+/* Bounce Animation */
+@keyframes bounce {
+  0% {
+      transform: translateX(0);
+  }
+  25% {
+      transform: translateX(-20px);
+  }
+  50% {
+      transform: translateX(20px);
+  }
+  75% {
+      transform: translateX(-10px);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+
+/* Apply animation to the cookie button */
+#cookie-button.bounce {
+    animation: bounce 0.5s ease forwards;
+}
+
+
+
+/* Container for favorite jokes */
+.favJokes {
+  background: #2c2c2c; /* A slightly lighter background than pure black */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Styling for unordered list */
+.favJokes ul {
+  padding: 0; 
+  margin-top: 0; 
+}
+
+/* Styling for list items */
+.favJokes li {
+  background: #5a189a; 
+  color: #c8fecf; 
+  margin-bottom: 10px; 
+}
+
+
+
+
+
+.delete-button {
+  background-color: transparent; 
+  color: #06bfe0; 
+  font-weight: bold; 
+  border: 2px solid #7c25c4; /* Border color */
+  padding: 5px 10px; /* Padding */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, color 0.3s; 
+  font-family: Arial, sans-serif; 
+  font-size: 1rem; 
+  display: inline-block; 
+  outline: none; 
+  text-decoration: none; 
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px; 
+}
+
+.delete-button:hover {
+  background-color: #03e1cf; /* Background color on hover */
+  color: #fff; /* Text color on hover */
+}
+
+
+

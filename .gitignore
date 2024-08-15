@@ -1,0 +1,53 @@
+# Ignore bundler config.
+/.bundle
+
+# Ignore logs and temp files.
+log/*
+tmp/*
+!log/.keep
+!tmp/.keep
+
+# Ignore database files.
+db/*.sqlite3
+db/*.sqlite3-journal
+
+# Ignore system-specific files.
+.DS_Store
+Thumbs.db
+
+# Ignore Ruby-specific files.
+/.ruby-version
+/.ruby-gemset
+
+# Ignore dotenv environment variables file.
+/.env
+
+# Ignore installed gems.
+/vendor/bundle/
+
+# Ignore spec results.
+/coverage/
+/rspec_results.txt
+
+# Ignore any IDE-specific files (e.g., VSCode, IntelliJ, etc.).
+.vscode/
+.idea/
+
+# Ignore compiled assets (if any).
+public/assets/
+
+# Ignore ActiveRecord schema dump file if you use it.
+/db/schema.rb
+/db/schema.sql
+
+# Ignore config database.yml (if you have sensitive data in it).
+config/database.yml
+
+# Ignore session store files.
+session_store.yml
+
+# Ignore secrets if any.
+config/secrets.yml
+
+# Ignore node_modules if using JavaScript packages (optional, if relevant).
+node_modules/
