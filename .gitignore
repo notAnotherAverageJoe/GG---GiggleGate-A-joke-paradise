@@ -51,3 +51,5 @@ config/secrets.yml
 
 # Ignore node_modules if using JavaScript packages (optional, if relevant).
 node_modules/
+notes.txt
+/notes.txt
